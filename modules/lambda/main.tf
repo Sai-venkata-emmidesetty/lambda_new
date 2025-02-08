@@ -4,7 +4,7 @@ resource "aws_lambda_function" "lambda_function_to_deploy_to_snowflake" {
   handler       = "app.lambda_handler" //myscript_name.lambda_handler
   runtime       = "python3.9"
   timeout       = 900
-  memory_size   = 4000 
+  memory_size   = 3000 
 
   s3_bucket = var.s3_bucket
   s3_key    = var.s3_key
