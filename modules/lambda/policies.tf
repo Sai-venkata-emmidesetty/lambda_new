@@ -2,7 +2,7 @@ resource "aws_iam_policy" "lambda_s3_policy" {
   name        = "lambda_s3_policy"
   description = "Allows lambda to read from s3"
 
-  policy = jsondencode(
+  policy = jsonencode(
 {
   "Version": "2012-10-17",
   "Statement": [
