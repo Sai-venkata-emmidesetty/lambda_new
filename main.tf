@@ -8,7 +8,7 @@ module "lambda" {
 resource "null_resource" "trigger_lambda" {
   provisioner "local-exec" {
     command = <<EOT
-aws lambda invoke --function-name ${module.lambda.lambda_name} response.json
+aws lambda invoke --function-name ${module.lambda.lambda_function_name} response.json
 EOT
   }
 
