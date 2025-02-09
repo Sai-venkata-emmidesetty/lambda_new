@@ -5,6 +5,11 @@ terraform {
         version = "~>5.0"
     }
   }
+  backend "s3" {
+      bucket = "edl-mig"
+      key    = "STATE_FILE_FOR_DEV/terraform.tfstate"
+      region = "us-east-1"  # Use the same region as your provider
+    }
 }
 
 provider "aws" {
