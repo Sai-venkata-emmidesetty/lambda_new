@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
       bucket = "edl-mig"
       key    = "edl-mig/STATE_FILE_FOR_DEV"
-      region = "us-east-1"  # Use the same region as your provider
+      region = "us-east-1"  # Use the same region as your providers
     }
 }
 
