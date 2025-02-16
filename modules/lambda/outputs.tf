@@ -5,7 +5,7 @@ output "lambda_function_name" {
 
 output "lambda_function_arn" {
   description = "The ARN of the Lambda function"
-  value       = data.aws_lambda_function.lambda_function_to_deploy_to_snowflake.arn
+  value       = aws_lambda_function.lambda_function_to_deploy_to_snowflake.arn
 }
 
 output "lambda_role_arn" {
